@@ -1,0 +1,37 @@
+﻿config [TARGET_COMP] [SOURCE_COMP] 0.5 $#%#$
+clearTerminal $#%#$
+writel ###正在分析MareEage.dec...### $#%#$
+delay 2 $#%#$
+writel ###完成### $#%#$
+writel ###正在向分布式计算机集群发送调度指令...### $#%#$
+delay 4 $#%#$
+writel ###完成### $#%#$
+writel ###正在加载RainbowTables...### $#%#$
+delay 6 $#%#$
+writel ###完成### $#%#$
+delay 1 $#%#$
+writel ###已启动破解进程，显卡GPU加速模式已开启！### $#%#$
+delay 3 $#%#$
+writel ###MD5_RainbowTables_1.....................20%已完成### $#%#$
+delay 3 $#%#$
+writel ###MD5_RainbowTables_1.....................40%已完成### $#%#$
+delay 3 $#%#$
+writel ###MD5_RainbowTables_1.....................60%已完成### $#%#$
+delay 3 $#%#$
+writel ###MD5_RainbowTables_1.....................80%已完成### $#%#$
+delay 3 $#%#$
+writel ###MD5_RainbowTables_1.....................100%已完成### $#%#$
+delay 1 $#%#$
+writel ###MD5_RainbowTables_1未包含匹配项，开始匹配MD5_RainbowTables_2...### $#%#$
+delay 3 $#%#$
+writel ###MD5_RainbowTables_2.....................20%已完成### $#%#$
+delay 3 $#%#$
+writel ###MD5_RainbowTables_2.....................40%已完成### $#%#$
+delay 2 $#%#$
+writel ###已匹配哈希值！4CE18A14C18C18ADAA6F392C1A400D4E 正在尝试还原密码...### $#%#$
+delay 6 $#%#$
+writel ###还原成功！密码为：Extinction ### $#%#$
+delay 1 $#%#$
+writel ###破解结果已保存至Crack/MareEage.txt### $#%#$
+
+

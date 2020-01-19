@@ -1,0 +1,9 @@
+<ConditionalActions>
+  
+  <OnConnect target="playerComp" needsMissionComplete="false" >
+    
+	<RunFunction FunctionName="addRankSilent" FunctionValue="1" />
+	
+  </OnConnect>
+
+</ConditionalActions>

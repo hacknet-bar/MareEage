@@ -1,0 +1,9 @@
+<ConditionalActions>
+  
+  <Instantly>
+    
+	<LaunchHackScript Filepath="HackerScripts/crack_dec.txt" DelayHost="irc" Delay="0.1" SourceComp="crackserver" TargetComp="playerComp" RequireLogsOnSource="false"/>
+    
+  </Instantly>
+
+</ConditionalActions>

@@ -1,0 +1,9 @@
+﻿config [TARGET_COMP] [SOURCE_COMP] 0.2 $#%#$
+connect $#%#$
+clearTerminal $#%#$
+writel ###检测到外部反向连接### $#%#$
+delay 1.5 $#%#$
+writel ###连接协议已确定，正在发送登陆凭证...### $#%#$
+delay 1.5 $#%#$
+writel ###连接确认！本机已连接至远程网络！### $#%#$
+

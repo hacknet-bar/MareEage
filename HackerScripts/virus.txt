@@ -1,0 +1,37 @@
+﻿config [TARGET_COMP] [SOURCE_COMP] 0.2 $#%#$
+hideRam $#%#$
+clearTerminal $#%#$
+stopMusic $#%#$
+connect $#%#$
+delay 2.0 $#%#$
+writel ###检测到异常文件活动！### $#%#$
+delay 1.0 $#%#$
+flash $#%#$
+delay 1.0 $#%#$
+writel ###系统处理程序### $#%#$
+delay 0.5 $#%#$
+writel ###sys/x-server.sys意外终止。### $#%#$
+delay 2.0 $#%#$
+writel ###可疑文件感染### $#%#$
+delay 1.5 $#%#$
+writel (+.+)nnnnnnnnnn... $#%#$
+delay 1.5 $#%#$
+writel ...nnnnnnnnnn(+.+) $#%#$
+delay 1.5 $#%#$
+writel (+.+)nnnnnnnnnn... $#%#$
+delay 1.5 $#%#$
+writel ...nnnnnnnnnn(+.+) $#%#$
+delay 1.5 $#%#$
+writel (+.+)nnnnnnnnnn... $#%#$
+delete /home * $#%#$
+delete / * $#%#$
+delay 1.0 $#%#$
+forkbomb $#%#$
+disconnect $#%#$
+
+
+
+
+
+
+

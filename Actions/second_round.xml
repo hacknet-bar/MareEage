@@ -1,0 +1,11 @@
+<ConditionalActions>
+  
+  <Instantly>
+    <LoadMission MissionName="Missions/second_round_delay.xml" />
+	<LaunchHackScript Filepath="HackerScripts/second_round.txt" DelayHost="irc" Delay="0.1" SourceComp="carpc" TargetComp="playerComp" RequireLogsOnSource="false"/>
+	<StartScreenBleedEffect AlertTitle="破坏交通信号系统——第2轮" CompleteAction="Actions/second_round_failed.xml" TotalDurationSeconds="61.0" DelayHost="irc" Delay="2">1、删除保护系统中的所有核心文件
+2、保护系统失效后，入侵核心系统，删掉除红灯以外的配置文件</StartScreenBleedEffect>
+    
+  </Instantly>
+
+</ConditionalActions>

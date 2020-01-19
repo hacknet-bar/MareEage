@@ -1,0 +1,23 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<mission id="secondroundfailed" activeCheck="true" shouldIgnoreSenderVerification="false">
+  <goals>
+    <!-- Goals here -->
+	<goal type="delay" time="0.1"/>
+  </goals>
+  <!-- 
+  Add your mission start and end items here
+  missionStart val="0">loadConditionalActions:Actions/TestActions.xml</missionStart>
+  missionEnd val="1">addRank</missionEnd> 
+  -->
+
+  <nextMission IsSilent="true">NONE</nextMission>
+  <!-- 
+  <posting title="startingMission">This would be the post on a message board if it was on them.</posting>
+  -->
+  <email>
+    <sender></sender>
+    <subject></subject>
+    <body></body>
+    <attachments></attachments>
+  </email>
+</mission>

@@ -1,0 +1,33 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="transferstation" name="中转站" icon="DLCServer" type="4" >
+
+  <portsForCrack val="4" />
+  <ports>22, 21, 25</ports>
+  <trace time="-1" />
+
+  <encryptedFile path="home" name="MareEage.dec" ip="0.0.0.0" header="Empty" double="false" pass="Extinction" extension=".exe">#BINARY#</encryptedFile>
+  
+  <file path="home" name="MareEage.txt">MareEage.dec破解结果
+哈希值：4CE18A14C18C18ADAA6F392C1A400D4E
+密码：Extinction</file>
+  <file path="home" name="隐藏端口配置文件.Conf">本机仅有1个端口处于隐藏运行模式
+端口号：1433，协议：tcp，运行模式：隐藏，运行状态：close
+——————————————————————————————————————
+提示：为确保系统稳定运行，修改本配置文件后并非立即生效，生效时间将随系统运行情况变化。
+  </file>
+  <file path="home" name="VirusFeatureLibrary.dll">#BINARY#</file>
+  <file path="home" name="readme.txt">因蠕虫病毒攻击，本服务器的密码爆破功能已失效，所以我干脆把它改成了病毒分析服务器。
+我已在服务器的home文件夹添加了VirusFeatureLibrary.dll，这是一个病毒特征库，但它和一般的病毒库不一样，它只能分析病毒，不能杀毒。
+一旦病毒分析功能启动，AI将尝试把病毒代码转为更易被理解的高级语言代码，再根据病毒特征库分析病毒代码的编写习惯和APT特征。
+简而言之，通过病毒分析，可以找到编写病毒的幕后黑手的身份，但不能保证100%成功。
+使用方法：和密码爆破的操作方法一样，将待分析的病毒文件上传到本文件夹即可自动启动分析功能，分析结果将以与原文件同名的形式保存在本文件夹中，格式为.txt。</file>
+  <file path="home" name="Eagekiller.exe">#BINARYSMALL#</file>
+  <file path="home" name="Eagekiller.txt">Eagekiller.exe分析结果
+代码编写习惯：无匹配 
+APT特征：无匹配
+分析结论：未找到病毒来源！
+  </file>
+
+   
+  
+</Computer>

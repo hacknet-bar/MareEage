@@ -1,0 +1,7 @@
+﻿config [TARGET_COMP] [SOURCE_COMP] 0.2 $#%#$
+clearTerminal $#%#$
+writel ###目标信号已丢失！### $#%#$
+delay 0.2 $#%#$
+writel ###车载网络已自动接入二号基站！### $#%#$
+
+

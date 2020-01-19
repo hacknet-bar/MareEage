@@ -1,0 +1,12 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="ispComp" name="ISP服务器" security="3" icon="DLCServer" allowsDefaultBootModule="false" type="4" >
+
+<admin type="fast" resetPassword="true" isSuper="true"/> 
+
+<ports>21, 22</ports>
+<proxy time="0.3" />
+<portsForCrack val="2" />
+
+<ispSystem />
+
+</Computer>

@@ -1,0 +1,9 @@
+<ConditionalActions>
+  
+  <Instantly>
+    
+	<SetLock DelayHost="irc" Delay="0.1" Module="ram" IsLocked="false" IsHidden="false" />
+    
+  </Instantly>
+
+</ConditionalActions>

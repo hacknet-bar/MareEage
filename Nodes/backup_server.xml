@@ -1,0 +1,31 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="backupserver" name="资源备份服务器" ip="234.60.124.50" icon="DLCServer" type="4" >
+
+  <portsForCrack val="2" />
+  <ports>22, 21</ports>
+  <trace time="60" />
+  <proxy time="0.8" />
+  <firewall level="8" solution="BMuTR6MV" additionalTime="0.3"/>
+  
+  <admin type="fast" resetPassword="true" isSuper="true"/> 
+  
+  <file path="home" name="recording_1.wav">（语音文件）
+1月29日 5:11
+声音：目前，“Mare”在各大论坛上均有出现，它能以某种方式拉进与其他用户的距离，并让这些用户自愿提供（？）。
+一周后，这些用户都将（？）。我们所开发的爬虫便是依照这种原理来寻找Mare并完成（？）计划。
+（？）计划到目前为止已接近完成，我再强调一下，爬虫只能用于寻找Mare的网络位置，但不能破坏它的行动力。
+为了防止因为（？）速度过快而被警方或其他组织察觉，在全球范围内，每日向Mare提供的（？）不宜超过600条。
+  </file>
+  <file path="home" name="recording_2.wav">（语音文件）
+声音A：该死！有人泄露了爬虫！
+声音B：怎么办，可以通过侵入他身上的手机或其他载体来破坏备份吗？
+声音A：等等，我发现还有另一个不知名的团体也在夺取爬虫。他们虽然想通过侵入交通系统来争取时间，但却忽视了重要的一点：遗留在那里的日志。
+声音B：果不其然，他们是受托把爬虫送往我们对头那里的吧。
+声音A：聪明。
+  </file>
+  <file path="Backup/Test_version" name="MareEage_test.exe">#BINARY#</file>
+  <file path="Backup/Test_version" name="MareEage_timing.cs">#BINARY#</file>
+  <file path="Backup/Test_version" name="MareEage_rules.cs">#BINARY#</file>
+  <file path="Backup/Test_version" name="MareEage_search.cs">#BINARY#</file>
+  
+</Computer>

@@ -1,0 +1,51 @@
+﻿config [TARGET_COMP] [SOURCE_COMP] 0.2 $#%#$
+clearTerminal $#%#$
+delay 2 $#%#$
+write_silent MareEage:Extinction-Prologue $#%#$
+delay 3 $#%#$
+write_silent / MareEage:灭减-序篇 $#%#$
+delay 3 $#%#$
+write_silent 制作人员：Myun Waterlove(In YamaguchiStudio) $#%#$
+delay 3 $#%#$
+write_silent 总设计：Waterlove $#%#$
+delay 3 $#%#$
+write_silent BGM选取：Myun Waterlove $#%#$
+delay 3 $#%#$
+write_silent 监制：Myun $#%#$
+delay 3 $#%#$
+write_silent Thanks for:<DEVILMAN crybaby> <SilentHill2> <Expelled from Paradise> $#%#$
+write_silent ---------------------------- $#%#$
+delay 3 $#%#$
+write_silent 世界上存在着两个组织，他们为了争夺一个网络爬虫而针锋相对。 $#%#$
+delay 3 $#%#$
+write_silent 根据信息，此爬虫的目的是利用Mare发起（？）计划。 $#%#$
+delay 3 $#%#$
+write_silent 这两个组织究竟是何人何物？背后隐藏的故事是什么？Audhumbla又能否平安归来？ $#%#$
+delay 3 $#%#$
+write_silent 这部作品为总剧情的序篇，后篇仍在企划中，它将为你解答所有疑问，带你走进未知的深处。 $#%#$
+delay 4 $#%#$
+write_silent 在后篇中，为了增强游戏的沉浸感，会触及独立于Hacknet的新功能，所以开发将花费更多时间。 $#%#$
+delay 3 $#%#$
+write_silent We are YamaguchiSD. $#%#$
+delay 3 $#%#$
+write_silent Thank You For Playing. $#%#$
+delay 2 $#%#$
+write_silent And. $#%#$
+delay 2 $#%#$
+write_silent Waiting For Us. $#%#$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

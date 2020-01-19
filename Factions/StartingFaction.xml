@@ -1,0 +1,205 @@
+<CustomFaction name="Oblivion Faction" id="Oblivion" playerVal="0">
+  
+  <Action ValueRequired="1">
+    <RunFunction FunctionName="playCustomSong:Music/The Snatcher.ogg" />
+    
+    <AddIRCMessage Author="Cawa" TargetComp="irc" Delay="5.0">@channel，诶，目标出现了！</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="10.0">按计划行事，这一单肯定能拿下。</AddIRCMessage>
+	<AddIRCMessage Author="Cawa" TargetComp="irc" Delay="15.0">看来全员都准备好了呢。</AddIRCMessage>
+	<AddIRCMessage Author="Alisa" TargetComp="irc" Delay="20.0">那是自然。</AddIRCMessage>
+	<AddIRCMessage Author="Cawa" TargetComp="irc" Delay="25.0">那么我要将你们的网络接入车载电脑了，等我信号！</AddIRCMessage>
+	<AddIRCMessage Author="iBot" TargetComp="irc" Delay="30.0">!ANNOUNCEMENT!</AddIRCMessage>
+	<AddIRCMessage Author="iBot" TargetComp="irc" Delay="32.0">@channel，Alisa已接入远程网络。</AddIRCMessage>
+	<AddIRCMessage Author="iBot" TargetComp="irc" Delay="37.0">!ANNOUNCEMENT!</AddIRCMessage>
+	<AddIRCMessage Author="iBot" TargetComp="irc" Delay="38.0">@channel，#PLAYERNAME#已接入远程网络。</AddIRCMessage>
+	
+  </Action>
+  
+  <Action ValueRequired="2">
+    <RunFunction FunctionName="playCustomSong:Music/Buddy Ryo.ogg" />
+	<RunFunction FunctionName="playCustomSong:Music/Strategist.ogg" DelayHost="irc" Delay="179.0" />
+	<CopyAsset DestFilePath="Drop/Uploads" DestComp="dropbox" SourceComp="transferstation" SourceFileName="MareEage.dec" SourceFilePath="home" DelayHost="irc" Delay="80" />
+	<AddConditionalActions Filepath="Actions/get_money.xml" DelayHost="irc" Delay="103.0"/>
+	<LoadMission MissionName="Missions/upload_dec.xml" />
+	
+	<AddIRCMessage Author="iBot" TargetComp="irc" Delay="4.0">!ANNOUNCEMENT!</AddIRCMessage>
+	<AddIRCMessage Author="iBot" TargetComp="irc" Delay="5.0">@channel，#PLAYERNAME#已接入本地网络。</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="10.0">@#PLAYERNAME#，希望你带来的是好消息。</AddIRCMessage>
+	<AddIRCMessage Author="#PLAYERNAME#" TargetComp="irc" Delay="14.0">嗯哼，看来当地的交通要混乱一阵子了。</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="18.0">干得好！</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="23.0">但我们只成功了一半，继续等Alisa的消息吧。</AddIRCMessage>
+	<AddIRCMessage Author="iBot" TargetComp="irc" Delay="38.0">!ANNOUNCEMENT!</AddIRCMessage>
+	<AddIRCMessage Author="iBot" TargetComp="irc" Delay="39.0">@channel，Alisa已接入本地网络。</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="44.0">@Alisa，得胜回朝？</AddIRCMessage>
+	<AddIRCMessage Author="Alisa" TargetComp="irc" Delay="48.0">废话！本小姐有失手过吗？</AddIRCMessage>
+	<AddIRCMessage Author="Alisa" TargetComp="irc" Delay="53.0">我这就把战利品上传到共享服务器去。</AddIRCMessage>
+	<AddIRCMessage Author="Cawa" TargetComp="irc" Delay="58.0">要累死我，总算完事了！</AddIRCMessage>
+    <AddIRCMessage Author="Cawa" TargetComp="irc" Delay="62.0">听我说！刚才#PLAYERNAME#瘫痪交通信号系统的时机掌握的很好啊！十字路口一下子就被挤了个水泄不通，毕竟一直是红灯呢！</AddIRCMessage>
+    <AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="66.0">因此也逼停了目标的汽车？</AddIRCMessage>
+    <AddIRCMessage Author="Cawa" TargetComp="irc" Delay="70.0">话虽然这么说，但我也被困在车流里了。</AddIRCMessage>
+    <AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="75.0">真是难为你了。</AddIRCMessage>
+    <AddIRCMessage Author="Alisa" TargetComp="irc" Delay="80.0">你们说完了吗？我已经上传完毕了，我想早点交差。</AddIRCMessage>
+    <AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="100.0">我已将文件发给任务委托者了，薪酬也已入账，共32万，我现在就把这笔款项分给你们。</AddIRCMessage>
+    <AddIRCMessage Author="#PLAYERNAME#" TargetComp="irc" Delay="105.0">@Audhumbla，谢谢，收到了，共8万。</AddIRCMessage>
+	<AddIRCMessage Author="Cawa" TargetComp="irc" Delay="110.0">@Audhumbla，me too！</AddIRCMessage>
+	<AddIRCMessage Author="Alisa" TargetComp="irc" Delay="115.0">然后呢？结果现在我们连那份加密文件到底是什么都不知道。</AddIRCMessage>
+    <AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="120.0">委托者要求我们不要擅自破解该加密文件，只需把文件直接发给他就可以了。</AddIRCMessage>
+	<AddIRCMessage Author="#PLAYERNAME#" TargetComp="irc" Delay="125.0">但是有这么高的赏金，我总感觉这次不是一般的任务啊。</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="130.0">原则上，我们不该违背委托者的要求，但既然你们这么说了..好吧，无论结果如何，之后探索的不良影响全由我个人承担。</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="134.0">其实我也觉得这一事件的背后隐藏着巨大的秘密，这个文件就是开启它的一把钥匙。</AddIRCMessage>	
+	<AddIRCMessage Author="#PLAYERNAME#" TargetComp="irc" Delay="139.0">你的意思是我们可以破解这个加密文件吗？</AddIRCMessage>	
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="145.0">不确定，我已经检查过文件了，它使用的加密方式虽然是通用解决方案，但该方案目前已经非常成熟，暂时没有已知可利用的漏洞。</AddIRCMessage>	
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="150.0">此外，它的文件头部也没有任何可利用的信息，源地址也被刻意抹除了。</AddIRCMessage>
+	<AddIRCMessage Author="#PLAYERNAME#" TargetComp="irc" Delay="154.0">难办了啊..</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="159.0">不过该方案有一个通用解码器，恰好我手上有。所以，我们只要知道密码就可以破解它。@Alisa，你在入侵的过程中有发现什么像是密码的东西吗？</AddIRCMessage>
+	<AddIRCMessage Author="Alisa" TargetComp="irc" Delay="165.0">屁都没有。</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="169.0">好吧，让我想想。</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="179.0">对了！前阵子我构建了一台分布式暴力破解服务器，我们可以用它来爆破这个文件的密码。虽然我不能保证一定成功，但我们可以试试。</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="185.0">@#PLAYERNAME#，你先去共享服务器下载那份加密文件，然后将它上传到暴力破解服务器的Crack文件夹中，当服务器接收到文件后会自动启动破解进程。</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="191.0">我已经为你创建了一个账户，这事就交给你了！我得去找找那个通用解码器。</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="195.0">!ATTACHMENT:link#%#暴破服务器#%#156.64.100.178</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="197.0">!ATTACHMENT:account#%#暴破服务器#%#156.64.100.178#%##PLAYERNAME##%#5PqlnNfl</AddIRCMessage>
+    <AddIRCMessage Author="#PLAYERNAME#" TargetComp="irc" Delay="200.0">明白了。</AddIRCMessage>
+	
+  </Action>
+  
+  <Action ValueRequired="3">
+    <CopyAsset DestFilePath="Crack" DestComp="crackserver" SourceComp="transferstation" SourceFileName="MareEage.txt" SourceFilePath="home" />
+	<AddAsset FileName="Decypher.exe" FileContents="#DECYPHER_PROGRAM#" TargetComp="dropbox" TargetFolderpath="bin" />
+	<DeleteFile TargetComp="dropbox" FilePath="Drop/Uploads" FileName="MareEage.dec" DelayHost="irc" Delay="0.1"/>
+	
+	<AddIRCMessage Author="#PLAYERNAME#" TargetComp="irc" Delay="6.0">@channel，成功了！密码是Extinction</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="11.0">Extinction？灭减？有意思..</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="17.0">我刚才已经把通用解码器上传到共享服务器了。你去把这加密文件解码了然后把解码后的文件上传到共享服务器上来，让我们来看看这里面究竟藏了什么东西。</AddIRCMessage>
+		
+  </Action>
+  
+  <Action ValueRequired="4">
+    <AddConditionalActions Filepath="Actions/hacker_attack.xml" DelayHost="irc" Delay="205.0"/>
+	
+    <AddIRCMessage Author="#PLAYERNAME#" TargetComp="irc" Delay="5.0">@Audhumbla，搞定。</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="10.0">@#PLAYERNAME#，好！让我看看..</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="20.0">嗯..这看起来像一个网络爬虫程序。</AddIRCMessage>
+	<AddIRCMessage Author="Alisa" TargetComp="irc" Delay="25.0">浪费时间！你直接运行一下不就知道了呗。</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="31.0">不，直接运行的风险太大了。</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="37.0">这样吧！我先来逆向一下它，通过静态分析应该能发现一些东西，在确保安全的前提下再运行也不迟。</AddIRCMessage>
+	<AddIRCMessage Author="Alisa" TargetComp="irc" Delay="41.0">随你。</AddIRCMessage>
+	<AddIRCMessage Author="iBot" TargetComp="irc" Delay="46.0">!ANNOUNCEMENT!</AddIRCMessage>
+	<AddIRCMessage Author="iBot" TargetComp="irc" Delay="47.0">@channel，警告！本地网络检测到异常流量！</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="50.0">怎么回事？</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="52.0">@iBot，checknet</AddIRCMessage>
+	<AddIRCMessage Author="iBot" TargetComp="irc" Delay="56.0">@Audhumbla，检查完成！异常网络位置：#PLAYERNAME# Workstation</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="60.0">@#PLAYERNAME#，发生什么事了？</AddIRCMessage>
+	<AddIRCMessage Author="#PLAYERNAME#" TargetComp="irc" Delay="65.0">我被入侵了！</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="69.0">我相信你能搞定的。</AddIRCMessage>
+	
+  </Action>
+  
+  <Action ValueRequired="5">
+    <RunFunction FunctionName="playCustomSong:Music/Strife.ogg" DelayHost="irc" Delay="46.0" />
+    <AddConditionalActions Filepath="Actions/unlock_ram.xml" DelayHost="irc" Delay="0.1"/>
+    <CancelScreenBleedEffect DelayHost="irc" Delay="0.1" />
+	<LaunchHackScript Filepath="HackerScripts/close_port.txt" DelayHost="irc" Delay="0.1" SourceComp="attackerjm" TargetComp="playerComp" RequireLogsOnSource="false" />
+	
+     
+	<AddIRCMessage Author="iBot" TargetComp="irc" Delay="5.0">!ANNOUNCEMENT!</AddIRCMessage>
+	<AddIRCMessage Author="iBot" TargetComp="irc" Delay="6.0">@channel，异常状态已解除！</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="11.0">@#PLAYERNAME#，干得漂亮！</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="15.0">你找到攻击者了吗？</AddIRCMessage>
+    <AddIRCMessage Author="#PLAYERNAME#" TargetComp="irc" Delay="20.0">我只找到了攻击者的跳板机，但是线索中断了。</AddIRCMessage>
+    <AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="25.0">有没有检查跳板机的日志？</AddIRCMessage>
+    <AddIRCMessage Author="#PLAYERNAME#" TargetComp="irc" Delay="30.0">检查了，但什么都没有。</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="35.0">看来我们有麻烦了，我们可能被溯源了。</AddIRCMessage>
+    <AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="40.0">好吧，暂时先不管这些。</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="46.0">我发现了一些奇怪的东西..</AddIRCMessage>
+    <AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="51.0">我刚才逆向了爬虫程序，发现有一个IP地址被硬编码到了程序中。</AddIRCMessage>
+    <AddIRCMessage Author="#PLAYERNAME#" TargetComp="irc" Delay="55.0">IP地址？</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="60.0">是的，根据扫描到的主机名显示，这是一台资源备份服务器。</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="66.0">@#PLAYERNAME#，如果你在这台服务器上发现什么有价值的信息，请把它们上传到共享服务器。我继续看看这个爬虫。</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="70.0">!ATTACHMENT:link#%#资源备份服务器#%#234.60.124.50</AddIRCMessage>
+	
+  </Action>
+  
+  <Action ValueRequired="6">
+    <LaunchHackScript Filepath="HackerScripts/virus.txt" DelayHost="irc" Delay="43.0" SourceComp="irc" TargetComp="playerComp" RequireLogsOnSource="false" />
+	<LaunchHackScript Filepath="HackerScripts/deletefiles_dropbox.txt" DelayHost="irc" Delay="0.1" SourceComp="irc" TargetComp="dropbox" RequireLogsOnSource="false" />
+	<LaunchHackScript Filepath="HackerScripts/deletefiles_crackserver.txt" DelayHost="irc" Delay="0.1" SourceComp="irc" TargetComp="crackserver" RequireLogsOnSource="false" />
+	<AddConditionalActions Filepath="Actions/virus_attack.xml" DelayHost="irc" Delay="73.0"/>
+  
+    <AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="5.0">@channel，我运行爬虫了，暂时没有任何反应。</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="9.0">@iBot，monitor MareEage.exe</AddIRCMessage>
+	<AddIRCMessage Author="iBot" TargetComp="irc" Delay="13.0">@Audhumbla，命令执行成功！已启动对MareEage.exe的监视模式！</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="18.0">好了，这样如果爬虫有什么反应，iBot会自动监控并通知我们的。</AddIRCMessage>
+	<AddIRCMessage Author="#PLAYERNAME#" TargetComp="irc" Delay="23.0">我刚才传了两个录音文件到共享服务器，我觉得你应该去听一下，我们的确有大麻烦了。</AddIRCMessage>
+    <AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="38.0">已阅。兵来将挡，水来土掩。Mare到底是何人何物，这是我迫切想知道的。</AddIRCMessage>
+	
+  </Action>	
+  
+  <Action ValueRequired="7">
+    
+    <RunFunction FunctionName="playCustomSong:Music/Okeydokey short.ogg" DelayHost="irc" Delay="41.0" />
+	<RunFunction FunctionName="playCustomSong:Music/旋转门.ogg" DelayHost="irc" Delay="83.0" />
+	<CopyAsset DestFilePath="Drop/Uploads" DestComp="dropbox" SourceComp="transferstation" SourceFileName="Eagekiller.exe" SourceFilePath="home" DelayHost="irc" Delay="42.0" />
+    <CopyAsset DestFilePath="home" DestComp="crackserver" SourceComp="transferstation" SourceFileName="VirusFeatureLibrary.dll" SourceFilePath="home" DelayHost="irc" Delay="102.0" />
+	<CopyAsset DestFilePath="Virus" DestComp="crackserver" SourceComp="transferstation" SourceFileName="readme.txt" SourceFilePath="home" DelayHost="irc" Delay="100.0" />
+	<LoadMission MissionName="Missions/upload_virus.xml" />
+			
+	<AddIRCMessage Author="iBot" TargetComp="irc" >!ANNOUNCEMENT!</AddIRCMessage>
+	<AddIRCMessage Author="iBot" TargetComp="irc" >系统故障！</AddIRCMessage>
+    <AddIRCMessage Author="iBot" TargetComp="irc" >!ANNOUNCEMENT!</AddIRCMessage>
+	<AddIRCMessage Author="iBot" TargetComp="irc" >系统已从故障中恢复！</AddIRCMessage>
+	<AddIRCMessage Author="iBot" TargetComp="irc" Delay="0.1">!ANNOUNCEMENT!</AddIRCMessage>
+    <AddIRCMessage Author="iBot" TargetComp="irc" Delay="0.3">@channel，用户"#PLAYERNAME#"进入频道！</AddIRCMessage>
+	<AddIRCMessage Author="#PLAYERNAME#" TargetComp="irc" Delay="5.0">WTF?!</AddIRCMessage>
+	<AddIRCMessage Author="iBot" TargetComp="irc" Delay="9.0">!ANNOUNCEMENT!</AddIRCMessage>
+	<AddIRCMessage Author="iBot" TargetComp="irc" Delay="10.0">@channel，用户Audhumbla进入频道！</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="15.0">我们被蠕虫病毒攻击了！有人在我们的核心服务器上投毒，之后病毒自动传播给了所有人。</AddIRCMessage>
+	<AddIRCMessage Author="#PLAYERNAME#" TargetComp="irc" Delay="20.0">我电脑上的爬虫文件都被删除了！</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="25.0">是的，这病毒就是奔着爬虫来的，其他服务器上保存的爬虫副本也都被删除了。不过好在我提前做了准备，这病毒只是让我掉线了，并没有影响我电脑上正在运行的爬虫程序。</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="31.0">遗憾的是，这病毒好像有自毁功能，但我没能提取到病毒样本。</AddIRCMessage>
+	<AddIRCMessage Author="iBot" TargetComp="irc" Delay="36.0">!ANNOUNCEMENT!</AddIRCMessage>
+	<AddIRCMessage Author="iBot" TargetComp="irc" Delay="37.0">@channel，用户"Alisa"进入频道！</AddIRCMessage>
+	<AddIRCMessage Author="Alisa" TargetComp="irc" Delay="42.0">@Audhumbla，病毒样本我已经传到共享服务器了。</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="47.0">怎么办到的？！</AddIRCMessage>
+	<AddIRCMessage Author="Alisa" TargetComp="irc" Delay="52.0">你傻吗？系统监视软件也算是必备工具吧！</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="57.0">原来如此！给我也整一个！</AddIRCMessage>
+	<AddIRCMessage Author="iBot" TargetComp="irc" Delay="61.0">!ANNOUNCEMENT!</AddIRCMessage>
+	<AddIRCMessage Author="iBot" TargetComp="irc" Delay="62.0">@channel，用户"Cawa"进入频道！</AddIRCMessage>
+	<AddIRCMessage Author="Cawa" TargetComp="irc" Delay="67.0">咋回事呀？我怎么刚发了会儿呆就看到自己掉线了？</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="73.0">@Cawa，我们被病毒攻击了，所有人都掉线了。话说，难道你现在还被困在路上？</AddIRCMessage>
+	<AddIRCMessage Author="Cawa" TargetComp="irc" Delay="78.0">唔，我能有什么办法嘛！车流这么长，我只能靠发呆来打发时间了。</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="83.0">好吧，言归正传。</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="88.0">既然得到病毒样本了，那就马上开始分析吧。哦对了！等我一下。</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="108.0">因蠕虫病毒攻击，分布式暴力破解服务器的功能已经失效了，所以我刚才干脆把它改成了病毒分析服务器。</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="114.0">@#PLAYERNAME#，那么你就去共享服务器把病毒样本下载下来吧，然后传到分布式暴力破解服务器的Virus文件夹，我再观察一下病毒分析功能的运行情况。</AddIRCMessage>
+			
+  </Action>	
+    
+  <Action ValueRequired="8">
+	<CopyAsset DestFilePath="Virus" DestComp="crackserver" SourceComp="transferstation" SourceFileName="Eagekiller.txt" SourceFilePath="home" DelayHost="irc" Delay="0.1" />
+	<LaunchHackScript Filepath="HackerScripts/stopmusic_last.txt" DelayHost="irc" Delay="16.0" SourceComp="playerComp" TargetComp="playerComp" RequireLogsOnSource="false" />
+	<LaunchHackScript Filepath="HackerScripts/Introduction_end.txt" DelayHost="irc" Delay="128.5" SourceComp="playerComp" TargetComp="playerComp" RequireLogsOnSource="false" />
+	<RunFunction FunctionName="playCustomSongImmediatley:Music/Promise.ogg" DelayHost="irc" Delay="98.0" />
+	
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="5.0">@#PLAYERNAME#，很好！病毒分析功能运行的非常稳定。怎么样？有结果吗？</AddIRCMessage>
+	<AddIRCMessage Author="#PLAYERNAME#" TargetComp="irc" Delay="10.0">结论是未找到病毒来源，失败了。</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="16.0">如果连我的病毒特征库也无法匹配到任何特征的话，那说明我们目前的形势非常严峻。</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="21.0">我开始后悔刚开始所做的决定了。</AddIRCMessage>
+	<AddIRCMessage Author="#PLAYERNAME#" TargetComp="irc" Delay="26.0">发生什么了？</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="32.0">你会知道的，但我们可能无法全身而退了。</AddIRCMessage>
+	<AddIRCMessage Author="#PLAYERNAME#" TargetComp="irc" Delay="37.0">我不太明白。</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="47.0">我刚才接到一个无声电话，几秒后就挂断了。</AddIRCMessage>
+	<AddIRCMessage Author="#PLAYERNAME#" TargetComp="irc" Delay="52.0">那是谁打来的？</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="57.0">不知道，呼叫方隐藏了手机号码。</AddIRCMessage>
+	<AddIRCMessage Author="#PLAYERNAME#" TargetComp="irc" Delay="62.0">如果也没有办法追踪到真实号码的话，会不会和之前的事件有关？</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="68.0">不确定。</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="78.0">我初步分析了病毒，结构比较复杂，我可能需要几天的时间才能给出手工分析结果。</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="83.0">大家暂时先散了吧，我需要独处一阵子，真的很不对劲。</AddIRCMessage>
+	<AddIRCMessage Author="#PLAYERNAME#" TargetComp="irc" Delay="88.0">你还会回来吗？</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="98.0">但愿吧，我还等着跟你们一块去贝加尔Lake钓鱼呢。</AddIRCMessage>
+	<AddIRCMessage Author="iBot" TargetComp="irc" Delay="103.0">!ANNOUNCEMENT!</AddIRCMessage>
+	<AddIRCMessage Author="iBot" TargetComp="irc" Delay="104.0">@channel，用户"#Audhumbla#"离开频道！</AddIRCMessage>
+	
+  </Action>
+	
+</CustomFaction>

@@ -1,0 +1,16 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="dropbox" name="文件共享" ip="156.64.100.199" security="6" allowsDefaultBootModule="true" icon="DLCServer" type="4" >
+
+  <portsForCrack val="4" />
+  <ports>22, 21, 25</ports>
+  <trace time="-1" />
+
+  <admin type="none"/>
+  <uploadServerDaemon name="文件共享" folder="Drop" 
+                      needsAuth="false" color="255,255,255" hasReturnViewButton="true"/>
+					  
+  <file path="bin" name="SSHCrack.exe">#SSH_CRACK#</file>
+  <file path="bin" name="FTPSprint.exe">#FTP_FAST_EXE#</file>
+  
+					  
+</Computer>

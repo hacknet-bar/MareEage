@@ -1,0 +1,10 @@
+<ConditionalActions>
+  
+  <Instantly>
+    
+	<RunFunction FunctionName="setFaction:Oblivion" />
+	<RunFunction FunctionName="addFlags:CSEC_Member" />
+    
+  </Instantly>
+
+</ConditionalActions>

@@ -1,0 +1,25 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="coresystem" name="核心系统" allowsDefaultBootModule="true" icon="chip" type="4" >
+
+  <portsForCrack val="2" />
+  <ports>22, 21</ports>
+  <trace time="-1" />
+  <firewall level="4" solution="9mXk"/>
+
+  <file path="home" name="Red.Conf">#BINARYSMALL#</file>
+  <file path="home" name="Yellow.Conf">#BINARYSMALL#</file>
+  <file path="home" name="Green.Conf">#BINARYSMALL#</file>
+  <file path="home" name="Warning.log">严重警告！检测到安全保护系统已失效！</file>
+  <file path="home" name="Readme.txt">该目录下的文件均为交通信号灯的配置文件。
+警告！请保持文件完整性并在交通管理部门的授权下进行操作，删除该目录下的文件将导致交通信号系统异常。
+  </file>
+  
+  <dlink target="protectionsystem" />
+  <dlink target="protectionsystem2" />
+  <dlink target="protectionsystem3" />
+  
+  <positionNear target="protectionsystem" position="1" total="3" extraDistance="0.1" force="false"/>
+  <positionNear target="protectionsystem2" position="1" total="3" extraDistance="0.1" force="false"/>
+  <positionNear target="protectionsystem3" position="1" total="3" extraDistance="0.1" force="false"/>
+				  				  
+</Computer>

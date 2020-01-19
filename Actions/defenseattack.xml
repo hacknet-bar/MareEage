@@ -1,0 +1,12 @@
+<ConditionalActions>
+  
+  <Instantly>
+    
+	<SetLock DelayHost="irc" Delay="62.0" Module="ram" IsLocked="true" IsHidden="false" />
+	<LaunchHackScript Filepath="HackerScripts/defenseattack.txt" DelayHost="irc" Delay="62.0" SourceComp="attackerjm" TargetComp="playerComp" RequireLogsOnSource="false"/>
+	<StartScreenBleedEffect AlertTitle="防御攻击" CompleteAction="Actions/defenseattack_failed.xml" TotalDurationSeconds="110.0" DelayHost="irc" Delay="71.0">1、打开个人主机中的“隐藏端口配置文件.Conf”文件，将端口1433从open改为close
+2、通过个人主机日志溯源攻击者，清空跳板机的sys文件夹</StartScreenBleedEffect>
+    
+  </Instantly>
+
+</ConditionalActions>

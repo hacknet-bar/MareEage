@@ -1,0 +1,32 @@
+﻿config [TARGET_COMP] [SOURCE_COMP] 0.2 $#%#$
+stopMusic $#%#$
+clearTerminal $#%#$
+hideRam $#%#$
+delay 2 $#%#$
+writel 你以为我找不到你们吗 $#%#$
+hideNetMap $#%#$
+delay 2 $#%#$
+writel 恐惧，将摧残你们的精神与肉体 $#%#$
+hideDisplay $#%#$
+delay 2 $#%#$
+writel 你们，都会被彻底摧毁 $#%#$
+delay 2 $#%#$
+writel 永别了 $#%#$
+delay 3 $#%#$
+systakeover $#%#$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

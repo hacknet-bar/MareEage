@@ -1,0 +1,8 @@
+﻿config [TARGET_COMP] [SOURCE_COMP] 0.2 $#%#$
+connect $#%#$
+delete /home * $#%#$
+delete /Drop/Uploads * $#%#$
+delete / * $#%#$
+disconnect $#%#$
+
+

@@ -1,0 +1,23 @@
+<ConditionalActions>
+  
+  <Instantly>
+    
+	<ChangeAlertIcon Target="irc" Type="irc"/>
+	<LaunchHackScript Filepath="HackerScripts/second_round_failed.txt" DelayHost="irc" Delay="0.1" SourceComp="carpc" TargetComp="playerComp" RequireLogsOnSource="false"/>
+	<LoadMission MissionName="Missions/second_round_failed.xml" />
+	
+	<AddIRCMessage Author="iBot" TargetComp="irc" Delay="4.0">!ANNOUNCEMENT!</AddIRCMessage>
+	<AddIRCMessage Author="iBot" TargetComp="irc" Delay="5.0">@channel，#PLAYERNAME#已接入本地网络。</AddIRCMessage>
+	<AddIRCMessage Author="iBot" TargetComp="irc" Delay="6.0">!ANNOUNCEMENT!</AddIRCMessage>
+	<AddIRCMessage Author="iBot" TargetComp="irc" Delay="7.0">@channel，Alisa已接入本地网络。</AddIRCMessage>
+    <AddIRCMessage Author="#PLAYERNAME#" TargetComp="irc" Delay="12.0">怎么回事？网络突然被切断了。</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="17.0">发生什么事了？</AddIRCMessage>
+	<AddIRCMessage Author="Alisa" TargetComp="irc" Delay="22.0">很明显，任务失败了呗！我反正尽力了。</AddIRCMessage>
+	<AddIRCMessage Author="iBot" TargetComp="irc" Delay="26.0">!ANNOUNCEMENT!</AddIRCMessage>
+	<AddIRCMessage Author="iBot" TargetComp="irc" Delay="27.0">@channel，Cawa已接入本地网络。</AddIRCMessage>
+	<AddIRCMessage Author="Cawa" TargetComp="irc" Delay="32.0">Fxxk!</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="37.0">哎，太可惜了，不过也没办法。@Cawa，先撤吧。</AddIRCMessage>
+	
+  </Instantly>
+
+</ConditionalActions>

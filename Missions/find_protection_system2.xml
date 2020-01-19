@@ -1,0 +1,27 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<mission id="findprotectionsystem2" activeCheck="true" shouldIgnoreSenderVerification="false">
+  <goals>
+    <!-- Goals here -->
+	<goal type="filedeletion" target="protectionsystem2" file="Core.exe" path="home"/>
+	<goal type="filedeletion" target="protectionsystem2" file="Detection.dll" path="home"/>
+	<goal type="filedeletion" target="protectionsystem2" file="Protection.dll" path="home"/>
+  </goals>
+  <!-- 
+  Add your mission start and end items here
+  missionStart val="0">loadConditionalActions:Actions/TestActions.xml</missionStart>
+  missionEnd val="1">addRank</missionEnd> 
+  -->
+  
+  <nextMission>Missions/find_protection_system3.xml</nextMission>
+  <!-- 
+  <posting title="startingMission">This would be the post on a message board if it was on them.</posting>
+  -->
+  <email>
+    <sender>车载电脑</sender>
+    <subject>已锁定2号保护系统</subject>
+    <body>已锁定2号保护系统的网络位置！</body>
+    <attachments>
+	<link comp="protectionsystem2" />
+	</attachments>
+  </email>
+</mission>

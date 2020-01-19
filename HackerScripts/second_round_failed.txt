@@ -1,0 +1,9 @@
+﻿config [TARGET_COMP] [SOURCE_COMP] 0.2 $#%#$
+stopMusic $#%#$
+clearTerminal $#%#$
+writel ###正在断开连接...### $#%#$
+delay 0.5 $#%#$
+writel ###连接已从远程网络断开！### $#%#$
+delay 39.0 $#%#$
+writel 任务失败了，但别灰心！重新创建游戏账户后再试一次吧！$#%#$
+

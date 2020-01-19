@@ -1,0 +1,32 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<mission id="Urgent" activeCheck="true" shouldIgnoreSenderVerification="false">
+  <goals>
+    <!-- Goals here -->
+	<goal type="filedownload" target="dropbox" file="SSHCrack.exe" path="bin"/>
+	<goal type="filedownload" target="dropbox" file="FTPSprint.exe" path="bin"/>
+  </goals>
+  <!-- 
+  Add your mission start and end items here
+  missionStart val="0">loadConditionalActions:Actions/TestActions.xml</missionStart>
+  missionEnd val="1">addRank</missionEnd> 
+  -->
+  <missionStart>loadConditionalActions:Actions/IRC0.xml</missionStart>
+  <missionEnd val="1">addRankSilent</missionEnd>
+  <nextMission>Missions/street_hack_delay.xml</nextMission>
+  <!-- 
+  <posting title="startingMission">This would be the post on a message board if it was on them.</posting>
+  -->
+  <email>
+    <sender>Audhumbla</sender>
+    <subject>十万火急</subject>
+    <body>#PLAYERNAME#， 就差你了， 快登陆组织的IRC， 大家都等着你呢。 
+                
+我们接到一份赏金丰厚的任务， 任务相关内容我会在IRC上说明。 
+                              
+对了， 为了安全起见， 我已经修改了IRC的IP地址。
+</body>
+    <attachments>
+      <link comp="irc" />
+    </attachments>
+  </email>
+</mission>

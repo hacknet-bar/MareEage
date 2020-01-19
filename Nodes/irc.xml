@@ -1,0 +1,24 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="irc" name="Oblivion核心服务器" icon="DLCServer" type="3" >
+
+  <portsForCrack val="4" />
+  <ports>22, 21, 25</ports>
+  <trace time="-1" />
+
+  <IRCDaemon themeColor="128,128,128" name="Oblivion IRC" needsLogin="false">
+    <user name="iBot" color="0,255,0"/>
+	<user name="Audhumbla" color="255,165,0"/>
+    <user name="Cawa" color="255,0,0"/>
+    <user name="Alisa" color="255,105,180"/>
+    <user name="#PLAYERNAME#" color="128,128,128"/>	
+	
+  </IRCDaemon>
+  
+  <dlink target="dropbox" />
+  <positionNear target="dropbox" position="1" total="3" extraDistance="0.1" force="false"/>
+  
+
+
+   
+  
+</Computer>

@@ -1,0 +1,37 @@
+﻿config [TARGET_COMP] [SOURCE_COMP] 0.2 $#%#$
+clearTerminal $#%#$
+connect $#%#$
+delay 1 $#%#$
+writel ###警告！### $#%#$
+delay 1 $#%#$
+writel ###隐藏端口1433检测到异常流量！### $#%#$
+delay 1 $#%#$
+writel ###已启动自动防御功能...### $#%#$
+delay 2 $#%#$
+writel ###警告！自动防御失败！### $#%#$
+delay 1 $#%#$
+writel ###正在启动入侵缓解功能...请尽快手动关闭端口！### $#%#$
+delay 20 $#%#$
+openPort 1433 $#%#$
+delay 20 $#%#$
+openPort 21 $#%#$
+delay 20 $#%#$
+openPort 22 $#%#$
+delay 20 $#%#$
+openPort 25 $#%#$
+delay 20 $#%#$
+openPort 80 $#%#$
+
+
+
+
+
+
+
+
+
+
+
+
+
+

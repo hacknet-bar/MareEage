@@ -1,0 +1,23 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<mission id="uploadvirus" activeCheck="true" shouldIgnoreSenderVerification="false">
+  <goals>
+    <!-- Goals here -->
+	<goal type="fileupload" target="playerComp" file="Eagekiller.exe" destTarget="crackserver" destPath="Virus"/>
+  </goals>
+  <!-- 
+  Add your mission start and end items here
+  missionStart val="0">loadConditionalActions:Actions/TestActions.xml</missionStart>
+  missionEnd val="1">addRank</missionEnd> 
+  -->
+
+  <nextMission IsSilent="true">Missions/virus_analysis.xml</nextMission>
+  <!-- 
+  <posting title="startingMission">This would be the post on a message board if it was on them.</posting>
+  -->
+  <email>
+    <sender></sender>
+    <subject></subject>
+    <body></body>
+    <attachments></attachments>
+  </email>
+</mission>

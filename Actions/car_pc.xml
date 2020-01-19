@@ -1,0 +1,11 @@
+<ConditionalActions>
+  
+  <Instantly>
+    
+	<LaunchHackScript Filepath="HackerScripts/car_pc.txt" DelayHost="irc" Delay="33.0" SourceComp="carpc" TargetComp="playerComp" RequireLogsOnSource="false"/>
+	<StartScreenBleedEffect AlertTitle="破坏交通信号系统" CompleteAction="Actions/second_round.xml" TotalDurationSeconds="130.0" DelayHost="irc" Delay="39">1、删除3个保护系统中的所有核心文件
+2、保护系统失效后，入侵核心系统，删掉除红灯以外的配置文件</StartScreenBleedEffect>
+    
+  </Instantly>
+
+</ConditionalActions>

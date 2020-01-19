@@ -1,0 +1,14 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="protectionsystem2" name="2号保护系统" allowsDefaultBootModule="true" icon="chip" type="4" >
+
+  <portsForCrack val="1" />
+  <ports>22</ports>
+  <trace time="-1" />
+
+  <file path="home" name="Core.exe">#BINARYSMALL#</file>
+  <file path="home" name="Detection.dll">#BINARYSMALL#</file>
+  <file path="home" name="Protection.dll">#BINARYSMALL#</file>
+  <file path="home" name="Readme.txt">该目录下的文件均为保护系统的核心文件。
+警告！请保持文件完整性，删除该目录下的文件将导致保护功能失效！</file>
+				  				  
+</Computer>

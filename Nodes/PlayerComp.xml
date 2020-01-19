@@ -1,0 +1,19 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="playerComp" name="#PLAYERNAME# Workstation" security="3" allowsDefaultBootModule="false" type="4" >
+
+<adminPass pass="password" />
+<account username="#PLAYERNAME#" password="f9KVuqBrr6wESC" type="ADMIN" />
+
+<ports>21, 22, 25, 80</ports>
+
+<proxy time="-1" />
+<portsForCrack val="5" />
+<trace time="300" />
+
+<file path="home" name="隐藏端口配置文件.Conf">本机仅有1个端口处于隐藏运行模式
+端口号：1433，协议：tcp，运行模式：隐藏，运行状态：open
+——————————————————————————————————————
+提示：为确保系统稳定运行，修改本配置文件后并非立即生效，生效时间将随系统运行情况变化。
+</file>
+
+</Computer>

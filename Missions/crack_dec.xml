@@ -1,0 +1,24 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<mission id="crackdec" activeCheck="true" shouldIgnoreSenderVerification="false">
+  <goals>
+    <!-- Goals here -->
+	<goal type="delay" time="62.0"/>
+  </goals>
+  <!-- 
+  Add your mission start and end items here
+  missionStart val="0">loadConditionalActions:Actions/TestActions.xml</missionStart>
+  missionEnd val="1">addRank</missionEnd> 
+  -->
+  <missionStart>loadConditionalActions:Actions/crack_dec.xml</missionStart>
+  <missionEnd val="1">addRankSilent</missionEnd> 
+  <nextMission IsSilent="true">Missions/decrypt_dec.xml</nextMission>
+  <!-- 
+  <posting title="startingMission">This would be the post on a message board if it was on them.</posting>
+  -->
+  <email>
+    <sender></sender>
+    <subject></subject>
+    <body></body>
+    <attachments></attachments>
+  </email>
+</mission>

@@ -1,0 +1,10 @@
+<ConditionalActions>
+  
+  <Instantly>
+    
+	<LaunchHackScript Filepath="HackerScripts/virus_analysis.txt" DelayHost="irc" Delay="0.1" SourceComp="crackserver" TargetComp="playerComp" RequireLogsOnSource="false"/>
+    
+	
+  </Instantly>
+
+</ConditionalActions>

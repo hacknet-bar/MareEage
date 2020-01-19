@@ -1,0 +1,9 @@
+<ConditionalActions>
+  
+  <Instantly>
+    
+	<ChangeAlertIcon Target="jmail" Type="mail"/>
+    
+  </Instantly>
+
+</ConditionalActions>

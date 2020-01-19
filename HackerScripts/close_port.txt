@@ -1,0 +1,7 @@
+﻿config [TARGET_COMP] [SOURCE_COMP] 0.2 $#%#$
+clearTerminal $#%#$
+writel ###检测到隐藏端口配置文件信息发生变更### $#%#$
+delay 1 $#%#$
+writel ###正在关闭1433端口...### $#%#$
+delay 2 $#%#$
+writel ###完成### $#%#$

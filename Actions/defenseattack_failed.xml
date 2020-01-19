@@ -1,0 +1,10 @@
+<ConditionalActions>
+  
+  <Instantly>
+  
+	<LaunchHackScript Filepath="HackerScripts/defenseattack_failed.txt" DelayHost="irc" Delay="0.1" SourceComp="attackerjm" TargetComp="playerComp" RequireLogsOnSource="false"/>
+    <LoadMission MissionName="Missions/second_round_failed.xml" />
+	
+  </Instantly>
+
+</ConditionalActions>

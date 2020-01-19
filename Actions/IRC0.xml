@@ -1,0 +1,28 @@
+<ConditionalActions>
+  
+  <OnConnect target="irc" needsMissionComplete="false">
+    <ChangeAlertIcon Target="irc" Type="irc"/>
+	<RunFunction FunctionName="setAssetServer:dropbox" />
+	
+	<AddIRCMessage Author="Cawa" TargetComp="irc">@Audhumbla，我已经到达目的地了，但目标还没出现呢。</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc">@Cawa，请继续观察，根据情报，你眼前的路口是目标的必经之路，目标随时可能出现。</AddIRCMessage>
+	<AddIRCMessage Author="Alisa" TargetComp="irc">我就绪了，#PLAYERNAME#什么时候到？</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc">@Alisa，我已经给他发消息了，他应该马上就到。</AddIRCMessage>
+    <AddIRCMessage Author="iBot" TargetComp="irc" Delay="0.1">!ANNOUNCEMENT!</AddIRCMessage>
+    <AddIRCMessage Author="iBot" TargetComp="irc" Delay="0.3">@channel，用户"#PLAYERNAME#"进入频道！</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="4.0">很好！人到齐了。</AddIRCMessage>
+	<AddIRCMessage Author="#PLAYERNAME#" TargetComp="irc" Delay="8.0">抱歉啊，我来迟了，没误事吧？</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="12.0">没事，@#PLAYERNAME#，我再简单说明一下。</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="17.0">我们的任务是从目标手机中获取一份加密文件。</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="22.0">Cawa已在目的地就位，当目标驾车经过时，Cawa会驾车进行跟踪。</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="28.0">@#PLAYERNAME#，你的任务是破坏交通信号系统，迫使目标停下，为Alisa通过基站入侵目标手机争取时间。在此之前，Cawa会将你们的网络接入车载电脑，可以它为跳板进行攻击。</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="34.0">若你失败，目标会驶离基站的信号范围，他的手机会自动漫游到下一个基站上，此时，你必须立刻入侵下一个十字路口的交通信号系统，而Alisa则会转而攻击第二个基站，这会为我们带来未知风险。</AddIRCMessage>
+	<AddIRCMessage Author="Audhumbla" TargetComp="irc" Delay="39.0">总之，当目标处于信号范围内时，你们必须在有限的时间内搞定他。你们有两次机会。</AddIRCMessage>
+	<AddIRCMessage Author="Alisa" TargetComp="irc" Delay="43.0">啧，知道了。</AddIRCMessage>
+	<AddIRCMessage Author="#PLAYERNAME#" TargetComp="irc" Delay="47.0">我明白了。</AddIRCMessage>
+	<AddIRCMessage Author="Cawa" TargetComp="irc" Delay="53.0">我刚才已经扫描了交通信号和基站系统，我觉得你们会需要一些工具。Alisa已经拿到工具了，@#PLAYERNAME#，你也该装备一下。</AddIRCMessage>
+	<AddIRCMessage Author="Cawa" TargetComp="irc" Delay="57.0">!ATTACHMENT:link#%#文件共享#%#156.64.100.199</AddIRCMessage>
+		
+  </OnConnect>
+
+</ConditionalActions>

@@ -1,0 +1,10 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="carpc" name="车载电脑" security="6" allowsDefaultBootModule="true" icon="chip" type="4" >
+
+  <portsForCrack val="4" />
+  <ports>22, 21, 25</ports>
+  <trace time="-1" />
+
+  <admin type="none"/>
+				  				  
+</Computer>

@@ -1,0 +1,59 @@
+﻿config [TARGET_COMP] [SOURCE_COMP] 0.5 $#%#$
+clearTerminal $#%#$
+writel ###正在加载Eagekiller.exe...### $#%#$
+delay 0.5 $#%#$
+writel ###完成### $#%#$
+writel ###正在加载病毒特征库Virus_Feature_Library.dll...### $#%#$
+delay 2 $#%#$
+writel ###完成### $#%#$
+writel ###正在分析代码...### $#%#$
+delay 2 $#%#$
+writel ###完成### $#%#$
+writel ###正在尝试转换代码...### $#%#$
+delay 1 $#%#$
+writel $#%#$
+writel int APIENTRYMain(HINSTANCE hinstance. $#%#$
+writel -----------HINSTANCE hPrevinstance. $#%#$
+writel -----------LPSTR  IpCmdLine. $#%#$
+writel -----------int  nCmdShow) $#%#$
+writel { $#%#$
+writel ----CkCharset "cc = new CkCharset;  $#%#$
+writel ----cc->UnlockComponent("UnlockCode");  $#%#$
+writel $#%#$
+writel ----//Load Unicode text (2 byte/char Unicode) $#%#$
+writel ----CkByteData "inData = new CkByteData; $#%#$
+writel ----inData->loadFile("testU.txt"); $#%#$
+writel $#%#$
+writel ----//Convert from Unicode to utf-8 $#%#$
+writel ----CkByteData "outData = new CkByteData; $#%#$
+writel ----cc->put_ToCharset("utf-8"); $#%#$
+writel ----cc->ConvertFromUnicode("inData,"outData); $#%#$
+writel $#%#$
+writel ----//Convert from utf-8 to iso-8859-1 $#%#$
+writel ----CkByteData "outData2 = new CkByteData; $#%#$
+writel ----cc->put_FromCharset("utf-8"); $#%#$
+writel ----cc->put_ToCharset("iso-8859-1"); $#%#$
+writel ----cc->ConvertData("outData,"outData2); $#%#$
+writel $#%#$
+writel ###正在匹配代码编写习惯...### $#%#$
+delay 2 $#%#$
+writel ###无匹配### $#%#$
+writel ###正在匹配APT特征...### $#%#$
+delay 2 $#%#$
+writel ###无匹配### $#%#$
+delay 1 $#%#$
+writel ###分析结论：未找到病毒来源！### $#%#$
+writel ###分析结果已保存至Virus/Eagekiller.txt### $#%#$
+
+
+
+
+
+
+
+
+
+
+
+
+

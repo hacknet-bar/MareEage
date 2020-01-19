@@ -1,0 +1,11 @@
+<ConditionalActions>
+  
+  <Instantly>
+    
+	<ChangeAlertIcon Target="irc" Type="irc"/>
+	<CancelScreenBleedEffect DelayHost="irc" Delay="0.1" />
+	<LaunchHackScript Filepath="HackerScripts/disconnect_from_car.txt" DelayHost="irc" Delay="0.1" SourceComp="carpc" TargetComp="playerComp" RequireLogsOnSource="false"/>
+    
+  </Instantly>
+
+</ConditionalActions>

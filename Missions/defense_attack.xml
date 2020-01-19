@@ -1,0 +1,26 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<mission id="defenseattack" activeCheck="true" shouldIgnoreSenderVerification="false">
+  <goals>
+    <!-- Goals here -->
+	<goal type="filechange" target="playerComp" file="隐藏端口配置文件.Conf" path="home" keyword="open" removal="true" caseSensitive="true"/>
+	<goal type="filechange" target="playerComp" file="隐藏端口配置文件.Conf" path="home" keyword="close"/>
+	<goal type="clearfolder" target="attackerjm" path="sys"/>
+  </goals>
+  <!-- 
+  Add your mission start and end items here
+  missionStart val="0">loadConditionalActions:Actions/TestActions.xml</missionStart>
+  missionEnd val="1">addRank</missionEnd> 
+  -->
+  <missionStart>loadConditionalActions:Actions/defenseattack.xml</missionStart>
+  <missionEnd val="1">addRankSilent</missionEnd> 
+  <nextMission IsSilent="true">Missions/download_recording.xml</nextMission>
+  <!-- 
+  <posting title="startingMission">This would be the post on a message board if it was on them.</posting>
+  -->
+  <email>
+    <sender></sender>
+    <subject></subject>
+    <body></body>
+    <attachments></attachments>
+  </email>
+</mission>

@@ -1,0 +1,21 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="crackserver" name="分布式暴力破解服务器" ip="156.64.100.178" security="6" allowsDefaultBootModule="true" icon="DLCServer" type="4" >
+
+  <portsForCrack val="4" />
+  <ports>22, 21, 25</ports>
+  <trace time="-1" />
+
+  <admin type="none"/>
+  <account username="#PLAYERNAME#" password="5PqlnNfl" type="ADMIN" />
+  
+  <file path="home" name="MD5_RainbowTables_1">#BINARY#</file>
+  <file path="home" name="MD5_RainbowTables_2">#BINARY#</file>
+  <file path="home" name="MD5_RainbowTables_3">#BINARY#</file>
+  <file path="home" name="MD5_RainbowTables_4">#BINARY#</file>
+  <file path="home" name="MD5_RainbowTables_5">#BINARY#</file>
+  <file path="Crack" name="readme.txt">说明：本机已与数百台计算机联网以进行分布式并行计算，以此来为同一破解任务提供支援。此外，本机已安装大型哈希表库，并使用显卡GPU来加速破解进程。
+使用方法：将待破解文件上传到本文件夹即可自动启动破解进程，破解结果将以与原文件同名的形式保存在本文件夹中，格式为.txt。
+  </file>
+  
+					  
+</Computer>

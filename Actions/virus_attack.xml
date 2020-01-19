@@ -1,0 +1,11 @@
+<ConditionalActions>
+  
+  <OnConnect target="playerComp" needsMissionComplete="false" >
+    
+	<LaunchHackScript Filepath="HackerScripts/after_virus_attack.txt" DelayHost="irc" Delay="0.1" SourceComp="irc" TargetComp="playerComp" RequireLogsOnSource="false" />
+	<RunFunction FunctionName="addRankSilent" FunctionValue="1" />
+	<CopyAsset DestFilePath="home" DestComp="playerComp" SourceComp="transferstation" SourceFileName="隐藏端口配置文件.Conf" SourceFilePath="home" DelayHost="irc" Delay="1.0" />
+	    
+  </OnConnect>
+
+</ConditionalActions>
